@@ -1,1 +1,111 @@
+Zomato Sales Analysis Power BI Report README
 
+Report Name: Zomato Sales & Performance Analysis
+
+
+
+---
+
+Overview
+
+This Power BI report provides a comprehensive analysis of Zomato sales data, offering insights into sales performance, customer preferences, restaurant trends, and delivery metrics. The report is designed to help stakeholders understand key performance indicators such as total sales, popular cuisines, customer demographics, and delivery performance.
+
+---
+
+Key Features
+
+Interactive Visualizations: The report includes dynamic charts, maps, and tables that allow users to explore sales data by region, cuisine, restaurant, and time.
+
+Data Filters: Slicers and filters are available for time periods (daily, weekly, monthly), regions, cuisines, and restaurant types.
+
+Metrics Calculated: Key metrics such as total sales, average order value, number of orders, customer retention rate, and delivery time have been calculated for deep insights.
+
+
+---
+
+Data Source
+
+Data Source: Zomato Sales Data (CSV, SQL Database, or API)
+
+Tables/Views Used:
+
+Orders
+
+Customers
+
+Restaurants
+
+Delivery_Records
+
+Items
+
+Data Refresh Frequency: Daily/Weekly
+
+
+---
+
+Report Sections
+
+1. Sales Overview
+
+Description: This section provides an overview of the total sales, number of orders, and average order value over time.
+
+Visualizations Included:
+
+KPI cards showing total sales, total orders, and average order value
+
+Line chart showing sales trend over time (daily/weekly/monthly)
+
+Bar chart showing sales by region
+
+
+2. Popular Cuisines & Items
+
+Description: Analyze the most popular cuisines and items ordered by customers, identifying trends in food preferences.
+
+Visualizations Included:
+
+Pie chart showing sales distribution by cuisine
+
+Bar chart displaying top-selling items
+
+Treemap showing sales by cuisine category (e.g., Chinese, Italian, Indian)
+
+
+3. Customer Segmentation
+
+Description: Segment customers based on order frequency, average spend, and location to identify key customer groups.
+
+Visualizations Included:
+
+Customer segmentation chart based on order frequency (e.g., high spenders, frequent customers)
+
+Heatmap showing customer density by region
+
+Bar chart comparing sales by customer demographics (age, gender, etc.)
+
+
+4. Restaurant Performance
+
+Description: Analyze the performance of different restaurants, including sales, order volume, and delivery efficiency.
+
+Visualizations Included:
+
+Bar chart showing sales by restaurant
+
+Line graph showing the number of orders over time for each restaurant
+
+Scatter plot for restaurant performance (sales vs. delivery time)
+
+
+5. Delivery Analysis
+
+Description: This section provides insights into delivery performance, including average delivery time, delays, and order completion rates.
+
+Visualizations Included:
+
+Bar chart showing average delivery time by region
+
+KPI cards for on-time delivery rate and late deliveries
+
+Map showing delivery distribution and delivery time performance across different regions
