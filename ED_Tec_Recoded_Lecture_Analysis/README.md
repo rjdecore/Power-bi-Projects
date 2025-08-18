@@ -69,7 +69,7 @@ This dashboard provides actionable insights into **course distribution, viewer e
   
 
 👉 *Click images for full size, or check the PDF version:*  
-📑 [View Full Dashboard PDF](Edtech%20Analysis.pdf)  
+📑 [View Full Dashboard PDF](Edtec_Analysis.pdf)  
 
 ---
 
