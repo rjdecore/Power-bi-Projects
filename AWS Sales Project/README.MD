@@ -67,9 +67,15 @@ This helps the company in **tracking KPIs, identifying growth opportunities, and
 ---
 
 ## 🖼️ Dashboard Preview  
-*(Add your Power BI dashboard screenshots here, or link to PDF)*  
 
-![Dashboard Screenshot](images/dashboard.png)  
+### Page 1 – Executive Overview  
+<img src="p1.png" alt="Dashboard Page 1" width="800">  
+
+### Page 2 – Sales Analysis  
+<img src="p2.png" alt="Dashboard Page 2" width="800">  
+
+### Page 3 – Returns & Customer Insights  
+<img src="p3.png" alt="Dashboard Page 3" width="800">  
 
 ---
 
