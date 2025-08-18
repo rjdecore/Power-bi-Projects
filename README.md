@@ -8,6 +8,6 @@ Each project demonstrates how data can be transformed into **actionable insights
 - **Power Query** for cleaning & transformation  
 - **DAX** for calculated measures & KPIs  
 
----
+--
 
 
