@@ -56,13 +56,13 @@ This dashboard was created to analyze the **T20 World Cup 2022** by providing in
 
 
 ### Page 2 – Tournament Overview  
-<img src="page2.png" alt="T20 Dashboard Page 1" width="800">  
+<img src="page2.png" alt="T20 Dashboard Page 2" width="800">  
 
 ### Page 3 – Batting Stats  
-<img src="page3.png" alt="T20 Dashboard Page 2" width="800">  
+<img src="page3.png" alt="T20 Dashboard Page 3" width="800">  
 
 ### Page 4 – Bowling Stats  
-<img src="page4.png" alt="T20 Dashboard Page 3" width="800">  
+<img src="page4.png" alt="T20 Dashboard Page 4" width="800">  
 
 👉 *Click images for full size, or check the PDF version:*  
 📑 [View Full Dashboard PDF](T20%20World%20Cup%20Analysis%20Dashboard.pdf)  
