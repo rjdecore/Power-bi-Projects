@@ -60,16 +60,13 @@ The dashboard helps answer:
 ## 🖼️ Dashboard Preview  
 
 ### Page 1 – Flight Status (On-Time / Delayed / Cancelled)  
-<img src="images/flight_page1.png" alt="Flight Dashboard Page 1" width="800">  
+<img src="Aut.png" alt="Flight Dashboard Page 1" width="800">  
 
-### Page 2 – Average Delay by Airline & Year  
-<img src="images/flight_page2.png" alt="Flight Dashboard Page 2" width="800">  
-
-### Page 3 – Airline Traffic & Departure Hour Trends  
-<img src="images/flight_page3.png" alt="Flight Dashboard Page 3" width="800">  
+### Page 2 – Airline Traffic & Departure Hour Trends  
+<img src="Aut1.png" alt="Flight Dashboard Page 3" width="800">  
 
 👉 *Click images for full view or check the PDF version:*  
-📑 [View Full Dashboard PDF](FLIGHT%20ANYALSIS.pdf)  
+📑 [View Full Dashboard PDF](FLIGHT_ANYALSIS.pdf)  
 
 ---
 
