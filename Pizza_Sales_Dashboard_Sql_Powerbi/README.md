@@ -22,6 +22,9 @@ SQL was used to perform data exploration, calculate KPIs, and prepare datasets f
 ```sql
 SELECT SUM(total_price) AS Total_Revenue 
 FROM pizza_sales;
+```
+
+
 
 
 ## 🔹 Power BI Analysis  
