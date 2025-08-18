@@ -29,7 +29,7 @@ The analysis helps uncover insights into **restaurant distribution, customer rat
   - No: **956 restaurants**  
 
 📌 **Dashboard Preview**  
-![Restaurant Dashboard](images/restaurant_dashboard.png)  
+![Restaurant Dashboard](d1.png)  
 
 ---
 
