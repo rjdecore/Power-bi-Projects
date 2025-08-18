@@ -50,5 +50,5 @@ The goal of this project is to help businesses understand **who their customers 
 
 ---
 
-## 📂 Repository Structure  
+  
 
