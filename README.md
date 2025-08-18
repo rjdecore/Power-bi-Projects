@@ -1,13 +1,13 @@
-Power BI Project:
+# 📊 Power BI Projects – Business Analytics Dashboards  
 
-Overview
+Welcome to my **Power BI portfolio repository** 🎉  
+This repo contains multiple **interactive dashboards** I’ve built to analyze real-world business problems.  
 
-This Power BI project contains multiple reports providing insights into various aspects of [briefly describe the project’s overall purpose, e.g., business performance, customer analysis, operations, etc.]. The project includes interactive reports on sales, customer behavior, product performance, and operational efficiency, aimed at helping stakeholders make data-driven decisions.
+Each project demonstrates how data can be transformed into **actionable insights** for businesses, using:  
+- **Power BI Desktop** for visualization  
+- **Power Query** for cleaning & transformation  
+- **DAX** for calculated measures & KPIs  
 
-Key Features
+---
 
-Interactive Dashboards: Drill-downs, slicers, and filters to explore data dynamically.
 
-Comprehensive Metrics: Key metrics like total sales, order volume, customer segmentation, and operational efficiency across different domains.
-
-Visualizations: Charts, maps, tables, and KPIs to provide an in-depth view of data from different perspectives
