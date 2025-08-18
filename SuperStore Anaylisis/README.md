@@ -63,10 +63,10 @@ The key questions answered are:
 ## 🖼️ Dashboard Preview  
 
 ### Page 1 – Sales Overview  
-<img src="images/store_page1.png" alt="Super Store Dashboard Page 1" width="800">  
+<img src="p1.png" alt="Super Store Dashboard Page 1" width="800">  
 
 ### Page 2 – Sales Forecast (15 Days)  
-<img src="images/store_page2.png" alt="Super Store Dashboard Page 2" width="800">  
+<img src="p2.png" alt="Super Store Dashboard Page 2" width="800">  
 
 👉 *Click images for full size, or check the PDF version:*  
 📑 [View Full Dashboard PDF](Super%20Store%20sales.pdf)  
