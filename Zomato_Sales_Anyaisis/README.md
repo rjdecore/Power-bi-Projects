@@ -50,7 +50,7 @@ This dashboard provides insights into **restaurant distribution, cuisines, ratin
 ## 🖼️ Dashboard Preview  
 
 ### Page 1 – Restaurant Overview  
-<img src="images/zomato_page1.png" alt="Zomato Dashboard Page 1" width="800">  
+<img src="zomato_page1.png" alt="Zomato Dashboard Page 1" width="800">  
 
 👉 *Click image for full size, or check the PDF version:*  
 📑 [View Full Dashboard PDF](Zomato%20data%20visualization.pdf)  
