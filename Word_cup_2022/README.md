@@ -1,78 +1,33 @@
-# 🏏 T20 World Cup 2022 Analysis – Power BI  
+# T20 World Cup 2022 — Power BI
 
-## 📌 Problem Statement  
-Cricket boards, analysts, and fans require **in-depth insights** into match outcomes, team performances, and player stats.  
-This dashboard was created to analyze the **T20 World Cup 2022** by providing interactive visualizations of matches, batting, and bowling performances.  
+## Business Objective
+Analyze tournament matches, team outcomes, batting performance, bowling performance, and match conditions through an interactive Power BI report.
 
----
+## Dataset
+The project combines match, batting, and bowling statistics covering the 2022 T20 World Cup.
 
-## 📂 Data Overview  
-- Dataset: T20 World Cup 2022 match statistics  
-- Contains: Teams, Toss Decisions, Match Results, Player Runs, Wickets, Economy, Stadiums  
+## Reported KPIs
+- **42 matches**
+- **11K runs**
+- **909 fours**
+- **331 sixes**
+- **515 wickets**
 
----
+## Analysis Areas
+- Match outcomes and toss decisions
+- Team performance
+- Top run scorers
+- Top wicket takers
+- Batting and bowling comparisons
+- Stadium-level outcomes
+- Batting-first vs bowling-first patterns
 
-## 📊 Key Metrics  
-- **Total Matches:** 42  
-- **Total Runs Scored:** 11K  
-- **Total Fours:** 909  
-- **Total Sixes:** 331  
-- **Total Wickets:** 515  
-- **Economy Rate:** 3,797  
+## Power BI Skills
+- Data modeling
+- DAX measures
+- KPI cards
+- Player ranking
+- Interactive multi-page reporting
 
----
-
-## 📌 Dashboard Insights  
-
-1. **Match Overview**  
-   - England crowned champions 🏆  
-   - Winning patterns by toss decision & stadium  
-
-2. **Batting Analysis**  
-   - Virat Kohli scored the highest runs (296)  
-   - Suryakumar Yadav, Jos Buttler, and Alex Hales also among top run scorers  
-
-3. **Bowling Analysis**  
-   - Wanindu Hasaranga took the highest wickets (15)  
-   - Sam Curran (13) and Anrich Nortje (11) were standout bowlers  
-
-4. **Tournament Summary**  
-   - Balance between batting first vs bowling first  
-   - Stadium-wise outcomes & averages  
-
----
-
-## 📈 Business / Sports Value  
-- 🏏 Helps **selectors & analysts** identify best performers  
-- 🎯 Useful for **strategic decision-making** (toss, batting/bowling order)  
-- 📺 Engages **fans & broadcasters** with key stats and comparisons  
-
----
-
-## 🖼️ Dashboard Preview 
-
-### Page 1 –  Overview  
-<img src="page1.png" alt="T20 Dashboard Page 1" width="800">  
-
-
-### Page 2 – Tournament Overview  
-<img src="p2.png" alt="T20 Dashboard Page 2" width="1000">  
-
-### Page 3 – Batting Stats  
-<img src="page3.png" alt="T20 Dashboard Page 3" width="800">  
-
-### Page 4 – Bowling Stats  
-<img src="page4.png" alt="T20 Dashboard Page 4" width="800">  
-
-👉 *Click images for full size, or check the PDF version:*  
-📑 [View Full Dashboard PDF](T20%20World%20Cup%20Analysis%20Dashboard.pdf)  
-
----
-
-## ⚙️ Tech Stack  
-- **Power BI Desktop** – Dashboard creation  
-- **DAX** – Custom KPIs for runs, wickets, averages  
-- **Data Modeling** – Player stats, match outcomes  
-
----
-
+## Tech Stack
+**Power BI Desktop | DAX | Data Modeling | Sports Analytics | Ranking**
