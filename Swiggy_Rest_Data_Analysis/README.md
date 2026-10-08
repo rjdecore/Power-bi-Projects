@@ -1,43 +1,29 @@
-# 🍽️ Zomato Restaurant Data Analysis Dashboard  
+# Restaurant Data Analysis — Power BI
 
-## 📊 Project Overview  
-This project presents an **interactive Power BI dashboard** analyzing restaurant data from Zomato across **15 countries, 81 cities, and 377 cuisines**.  
+## Business Objective
+Analyze restaurant distribution, cuisines, ratings, delivery availability, table booking, and geographic patterns across multiple markets.
 
-The analysis helps uncover insights into **restaurant distribution, customer ratings, online delivery, and table booking preferences**.  
+## Reported KPIs
+- **1,098 restaurants**
+- **81 cities**
+- **15 countries**
+- **2.92 average rating**
+- **193K total votes**
+- **377 cuisines**
 
----
+## Business Questions
+- Which cuisines are most common?
+- Which cities and countries have the highest restaurant concentration?
+- How do restaurant ratings vary?
+- How widely are online delivery and table booking available?
 
-## 🚀 Features & Insights  
+## Analysis Areas
+- Cuisine performance
+- City and country distribution
+- Ratings
+- Online delivery
+- Table booking
+- Geographic restaurant density
 
-### 🔹 Key KPIs  
-- **# Restaurants** → 1,098  
-- **# Cities** → 81  
-- **# Countries** → 15  
-- **Average Rating** → 2.92  
-- **Total Votes** → 193K  
-- **# Cuisines** → 377  
-
-### 🔹 Visualizations  
-- **Cuisine Analysis**: Count of restaurants and average rating by cuisine type (e.g., North Indian, Chinese, Fast Food, Cafe, Bakery, etc.).  
-- **City-wise Distribution**: Interactive map showing restaurant density across cities and countries.  
-- **Cuisine-wise Count**: Popular cuisine combinations (e.g., North Indian + Chinese).  
-- **Online Delivery**:  
-  - Yes: **818 restaurants**  
-  - No: **280 restaurants**  
-- **Table Booking Availability**:  
-  - Yes: **142 restaurants**  
-  - No: **956 restaurants**  
-
-📌 **Dashboard Preview**  
-![Restaurant Dashboard](d1.png)  
-
----
-
-## 🛠️ Tools & Technologies  
-- **Power BI Desktop** → Dashboard design & visualization  
-- **DAX Functions** → For calculated measures  
-- **Data Cleaning & Transformation** → Power Query Editor  
-
----
-
-
+## Tech Stack
+**Power BI | DAX | Power Query | Geospatial Analysis | Restaurant Analytics**
