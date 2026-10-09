@@ -35,7 +35,7 @@ select sum(total_price)/count(distinct(order_id)) as avg_order_value from pizza_
 select sum(quantity) as'total_pizza_sold' from pizza_sales;
 
 -- total_orders
-select count(distinct(order_id)) as avg_order_value from pizza_sales;
+select count(distinct(order_id)) as total_orders from pizza_sales;
 
 -- avg_pizza per order
 select * from pizza_sales;
@@ -121,30 +121,30 @@ select
   group by pizza_name
   order by Total_order  limit 5;
  
- -- top 5 pizza by total order for classic category
+ -- top 5 pizzas by total orders within the Classic category
 SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
 FROM pizza_sales
 WHERE pizza_category = 'Classic'
 GROUP BY pizza_name
-ORDER BY Total_Orders ASC limit 5;
+ORDER BY Total_Orders DESC limit 5;
 
 SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
 FROM pizza_sales
 WHERE pizza_category = 'Veggie'
 GROUP BY pizza_name
-ORDER BY Total_Orders ASC limit 5;
+ORDER BY Total_Orders DESC limit 5;
 
 SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
 FROM pizza_sales
 WHERE pizza_category = 'Supreme'
 GROUP BY pizza_name
-ORDER BY Total_Orders ASC limit 5;
+ORDER BY Total_Orders DESC limit 5;
 
 SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
 FROM pizza_sales
 WHERE pizza_category = 'Chicken'
 GROUP BY pizza_name
-ORDER BY Total_Orders ASC limit 5;
+ORDER BY Total_Orders DESC limit 5;
 
 select distinct(pizza_category) from pizza_sales
 
