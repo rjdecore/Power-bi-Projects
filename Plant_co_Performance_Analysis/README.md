@@ -35,4 +35,4 @@ The dashboard reports YTD sales of 555.66K versus PYTD sales of 538.61K, a displ
 Leadership can use the variance view to focus follow-up analysis on markets, products and accounts that contribute to performance gaps or gains.
 
 ## Report / PDF
-A PDF export was not identified in this project folder; use the dashboard preview and Power BI report if present. Keep this note updated if an export is added.
+Review the [Performance Report PDF](Performance%20Report.pdf) and open the [interactive Power BI report](Performance%20Report.pbix).
