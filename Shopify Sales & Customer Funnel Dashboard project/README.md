@@ -20,6 +20,10 @@ Understand sales performance, product mix, payment-gateway mix, customer purchas
 - Payment mix is led by **Shopify Payments (52%)**, followed by PayPal (20%), gift card (19%) and Amazon Payments (7%) in the displayed overview.
 - Product-type quantity is led by **Running Shoes (~2.1K)**, followed by Tennis Shoes (~1.4K), Walking Shoes (~1.0K) and Cycling Shoes (~0.8K).
 
+## Technical audit finding from the transaction-detail preview
+
+The detail preview shows the displayed **Customer Id as 1 across multiple different customer names**. If that is the actual underlying column value rather than a visual/sample artifact, it is a data-model or source-key problem: customer counts, repeat-customer classification and purchase-frequency calculations may be unreliable. Verify Customer Id uniqueness and its relationship to the transaction table in the PBIX before presenting the customer KPIs as fully validated.
+
 ## Business interpretation
 The dashboard suggests a substantial repeat-customer segment and a concentration of payments through Shopify Payments. Product-type quantities show which types account for more units in this view; they do not by themselves show profit contribution.
 
