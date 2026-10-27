@@ -42,4 +42,4 @@ The dashboard reports $1.6M sales, $175.3K profit, 22K quantity and four average
 Retail leaders can prioritize profitable segments, investigate discount/shipping trade-offs and use the forecast as one input to inventory and sales planning.
 
 ## Report / PDF
-A PDF export was not identified in this project folder; use the available Power BI report and screenshots. Add a PDF export when available for easier recruiter review.
+Review the [Superstore sales PDF](Super%20Store%20sales.pdf) and open the [interactive Power BI report](Sales%20dash%20bord%20creation.pbix).
