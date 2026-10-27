@@ -101,3 +101,19 @@ Return quantity and return rate are analyzed to identify products with comparati
 ## Tech Stack
 
 **Power BI Desktop | Power Query | DAX | Data Modeling | Sales Analytics**
+
+
+## Business Questions Addressed
+- Where is revenue growing or declining across the available 2015–2017 period?
+- Which products, customers and territories contribute most to sales?
+- Which products or categories have higher return activity?
+- How do order and customer patterns change over time?
+
+## Key Findings to Communicate
+Use the report's current KPI cards and product/customer/territory visuals to identify the largest sales contributors and return patterns. The dashboard reports a $24.9M revenue view, 25K+ orders, 18K customers, 293 products and a 2.17% return rate. Treat these as dashboard-reported values, not causal explanations.
+
+## Business Value
+Sales leaders can prioritize high-contribution products and territories; customer teams can investigate high-value customers; operations and product teams can investigate return-heavy items.
+
+## Report / PDF
+Open [the exported dashboard PDF](AW-Report-file_custom.pdf) for the report pages and [the Power BI file](AW-Report-file_custom.pbix) for interactive filtering.
