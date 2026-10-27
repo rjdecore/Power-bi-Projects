@@ -41,4 +41,4 @@ The analysis can support market selection, restaurant positioning, cuisine strat
 The dashboard reports 9,551 restaurants, average cost for two of 1.20K, average rating 2.67, 146 cuisines, 26% online delivery availability and 12% table-booking availability. Geography and cuisine views help compare listed supply and service availability; they do not directly measure restaurant profitability.
 
 ## Report / PDF
-Review the report artifacts in this folder and link the exported PDF here if present.
+[Open the Zomato dashboard PDF](Zomato%20data%20visualization.pdf) and [the interactive PBIX](Zomato%20data%20visualization.pbix).
