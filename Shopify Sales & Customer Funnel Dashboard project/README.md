@@ -1,94 +1,43 @@
 # Shopify Sales & Customer Funnel — Power BI
 
-## Project summary
+## Business objective
+Understand sales performance, product mix, payment-gateway mix, customer purchase frequency and regional sales patterns in the supplied transaction window.
 
-An interactive sales and customer-behavior dashboard built to explore transaction value, customer purchasing patterns, product mix, payment methods and regional performance.
+## Dashboard-reported KPIs
+- **Net Sales:** $4,180,874
+- **Total Quantity:** 7,534
+- **Net Average Order Value:** $562.6
+- **Total Customers:** 4,431
+- **Single-order customers:** 2,392
+- **Repeat customers:** 2,039
+- **Repeat rate:** 46%
+- **Customer Lifetime Value (dashboard label):** $943.6
+- **Purchase frequency:** 1.68
 
-**Tools:** Power BI Desktop, Power Query, DAX and interactive report features.
+## Findings visible in the dashboard preview
+- Repeat customers are **2,039 of 4,431 customers**, or approximately **46.0%**, consistent with the displayed repeat-rate KPI. Single-order customers account for the remaining 54.0%.
+- The visible net-sales trend ranges from approximately **$0.53M to $0.68M** across the seven displayed day labels; the highest visible point is $0.68M at label 24, and the lowest is $0.53M at labels 18 and 23.
+- Payment mix is led by **Shopify Payments (52%)**, followed by PayPal (20%), gift card (19%) and Amazon Payments (7%) in the displayed overview.
+- Product-type quantity is led by **Running Shoes (~2.1K)**, followed by Tennis Shoes (~1.4K), Walking Shoes (~1.0K) and Cycling Shoes (~0.8K).
 
-## Business questions
+## Business interpretation
+The dashboard suggests a substantial repeat-customer segment and a concentration of payments through Shopify Payments. Product-type quantities show which types account for more units in this view; they do not by themselves show profit contribution.
 
-- What is the net sales value in the supplied dataset?
-- How are customers split between single-order and repeat-order groups?
-- Which product types and payment gateways contribute most to sales?
-- Which provinces and cities lead on the selected metric?
-- How do sales vary by date?
-- Which customer metrics can be described reliably from the available observation period?
+The supplied project notes describe a **one-week transaction window**. The $943.6 “Lifetime Value” label should not be presented as a validated long-term CLV forecast without verifying the measure formula and observation window. Likewise, purchase frequency should be explained using the actual calculation and date range.
 
-## Current dashboard metrics
+## Business recommendations
+1. Investigate repeat-customer behavior by product type and payment method, using a longer observation period before proposing retention changes.
+2. Review daily sales dips and peaks with order count and average order value to distinguish volume from basket-size effects.
+3. Compare product-type sales with margin, returns and stock before prioritising assortment.
+4. Verify the CLV and purchase-frequency definitions in the PBIX before using them for customer-value forecasts.
 
-The dashboard currently displays the following values. These are transcribed from the existing dashboard. KPI values and measures are intentionally left unchanged in this documentation pass.
+## Report artifacts
+- [Dashboard overview preview](d1.png)
+- [Transaction detail preview](d2.png)
+- [Interactive Power BI report](Shofify%20Dashboard.pbix)
+- [Exported dashboard PDF](Shofify%20Dashboard.pdf)
+- [Supporting presentation](Shopify%20PPT.pptx)
+- [Data terminology reference](Shopify%20-%20Data%20Terminology.docx)
 
-| Displayed metric | Current displayed value |
-|---|---:|
-| Net Sales | $4,180,874 |
-| Total Quantity | 7,534 |
-| Net Average Order Value | $562.6 |
-| Total Customers | 4,431 |
-| Single-order customers | 2,392 |
-| Repeat customers | 2,039 |
-| Repeat rate | 46% |
-| Customer Lifetime Value (dashboard label) | $943.6 |
-| Purchase frequency | 1.68 |
-
-## Analysis included
-
-### Sales and transaction performance
-- Net sales and quantity KPIs
-- Daily net-sales trend
-- Product-type sales comparison
-- Payment-gateway sales mix
-
-### Customer behavior
-- Single-order versus repeat-customer counts
-- Repeat-rate and purchase-frequency indicators
-- Customer-level transaction detail
-
-### Geography
-- Province and city views
-- Geographic sales distribution
-- Ranked city performance
-
-## Power BI techniques shown
-
-The report demonstrates a combination of KPI cards, slicers, trend charts, product/payment breakdowns, geographic visuals and transaction-level detail. The exact implementation of each DAX measure, model relationship and interactive feature still needs validation against the PBIX before it is claimed as verified.
-
-## Business interpretation and limitations
-
-The supplied project documentation describes a one-week transaction window. When discussing repeat purchasing and the dashboard's CLV label in an interview, explain the measure definition and the observation window so that the interpretation stays aligned with what the report calculates.
-
-## Dashboard previews
-
-### Executive overview
-![Shopify dashboard overview](d1.png)
-
-### Transaction detail
-![Shopify transaction detail](d2.png)
-
-## Files
-
-- `Shofify Dashboard.pbix` — Power BI report
-- `Shofify Dashboard.pdf` — exported report
-- `Shopify PPT.pptx` — supporting presentation
-- `Shopify - Data Terminology.docx` — terminology reference
-- `d1.png`, `d2.png` — dashboard preview images
-
-## Documentation Notes
-
-Dashboard KPI values and measures are intentionally unchanged. Use the PBIX and terminology document to explain each metric's formula, customer/order grain and observation window when presenting the project.
-
-
-## Business Questions Addressed
-- What sales and order-value patterns appear in the available transaction window?
-- How do single-order and repeat-customer groups compare?
-- Which product types, payment gateways and locations contribute most?
-- Which customer metrics can be responsibly interpreted from this dataset?
-
-## Key Findings to Communicate
-The dashboard displays $4,180,874 net sales, 7,534 quantity, $562.6 net average order value, 4,431 customers, 2,392 single-order customers, 2,039 repeat customers, 46% repeat rate, $943.6 under the dashboard's CLV label and 1.68 purchase frequency. These values are documented as the dashboard's displayed values; use the report's own definitions and current filters when discussing them. The supplied project notes a one-week transaction window, so avoid presenting the CLV label as a validated long-term lifetime forecast without explaining its formula and assumptions.
-
-## Business Value
-Commercial teams can review sales mix, payment preferences and observed repeat purchasing to guide short-window reporting and identify hypotheses for further customer analysis.
-
-## Report / PDF
-Open [the Shopify dashboard PDF](Shofify%20Dashboard.pdf), [the interactive PBIX](Shofify%20Dashboard.pbix) and [the supporting presentation](Shopify%20PPT.pptx).
+## Tools
+Power BI Desktop, Power Query, DAX, KPI cards, trend analysis, payment mix, product segmentation and geographic reporting.
