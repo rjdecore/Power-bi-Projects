@@ -31,3 +31,14 @@ The analysis can support market selection, restaurant positioning, cuisine strat
 
 ## Tech Stack
 **Power BI | DAX | Power Query | Geospatial Analysis | Restaurant Analytics**
+
+## Business Questions Addressed
+- Which countries and cities contain the most listed restaurants?
+- Which cuisines are common and how do ratings and cost vary?
+- How prevalent are online delivery and table booking?
+
+## Key Findings & Business Value
+The dashboard reports 9,551 restaurants, average cost for two of 1.20K, average rating 2.67, 146 cuisines, 26% online delivery availability and 12% table-booking availability. Geography and cuisine views help compare listed supply and service availability; they do not directly measure restaurant profitability.
+
+## Report / PDF
+[Open the Zomato dashboard PDF](Zomato%20data%20visualization.pdf) and [the interactive PBIX](Zomato%20data%20visualization.pbix).
