@@ -50,4 +50,4 @@ The dashboard supports driver allocation, demand planning, vehicle comparison, a
 Use the overview and time-analysis pages to identify peak demand intervals, high-activity areas and differences across vehicle/payment segments. Quote exact totals from the report's KPI cards and state the filters used. These patterns can inform driver allocation, shift planning and vehicle mix.
 
 ## Report / PDF
-Review the report artifacts in this folder and the interactive PBIX. If an exported PDF is present, link it here using its exact filename.
+Review the [Uber trip analysis PDF](uber.pdf) and open the [interactive Power BI report](uber.pbix).
