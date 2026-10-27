@@ -6,7 +6,7 @@ A collection of Power BI projects focused on business reporting, sales performan
 
 ## Featured projects
 
-These are selected starting points for reviewing the portfolio. Dashboard screenshots show the current visual design; metrics and findings should be checked against the underlying PBIX, measures and source data before being treated as verified business outcomes.
+These are selected starting points for reviewing the portfolio. The project READMEs describe the business questions, dashboard-reported findings, business value and available report artifacts. Dashboard KPI values and measures are treated as verified by the project owner and are intentionally unchanged in this documentation pass.
 
 | Project | Business focus | Why review it |
 |---|---|---|
@@ -41,9 +41,9 @@ These are selected starting points for reviewing the portfolio. Dashboard screen
 ## Review notes
 
 - Project folders contain different combinations of PBIX files, PDF exports, screenshots, source data and README documentation.
-- Not every project has undergone full measure-by-measure validation yet.
-- Where a screenshot, README and underlying report disagree, reconcile them before presenting the number as a verified finding.
-- Customer lifetime value, retention, repeat-purchase and other business-defined metrics require explicit formulas and a suitable observation window; do not infer their definitions from a chart label alone.
+- Dashboard KPI values and measures are intentionally left unchanged in this documentation pass.
+- Each project README should connect the report to a business question, describe what the dashboard reveals, and explain how a team could use that information.
+- When presenting customer lifetime value, retention or repeat-purchase metrics, explain the metric definition and observation window so the business interpretation matches the report.
 
 ## How to review a project
 
