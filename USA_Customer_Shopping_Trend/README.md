@@ -34,3 +34,14 @@ The existing dashboard reports approximately:
 
 ## Tech Stack
 **Power BI Desktop | DAX | Data Modeling | Customer Analytics | Retail Analytics**
+
+## Business Questions Addressed
+- Which products, states and customer segments contribute most to shopping activity?
+- How do payment, season, shipping, promotions and subscription patterns vary?
+- What repeat-purchase patterns appear in the dataset?
+
+## Key Findings & Business Value
+The dashboard reports about 4K customers, $233K sales, 3.75 average review rating, $59.76 average order value, 97.9% repeat-purchase rate and average age 44. Use the segment views to describe customer differences and inform assortment, promotions and subscriber engagement analysis.
+
+## Report / PDF
+Use the available report visuals; a PDF export was not identified in the project listing.
