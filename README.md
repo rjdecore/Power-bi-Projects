@@ -6,30 +6,30 @@ A collection of Power BI projects focused on business reporting, sales performan
 
 ## Featured projects
 
-These are selected starting points for reviewing the portfolio. The project READMEs describe the business questions, dashboard-reported findings, business value and available report artifacts. Dashboard KPI values and measures are treated as verified by the project owner and are intentionally unchanged in this documentation pass.
+The project READMEs connect each dashboard to business questions, report-visible findings and practical decisions. KPI values are transcribed from available report artifacts; technical audit findings are called out separately when the report layout or preview reveals a calculation or modeling issue.
 
 | Project | Business focus | Why review it |
 |---|---|---|
 | [Plant Company Performance](Plant_co_Performance_Analysis/) | YTD/PYTD performance, gross profit, product and country analysis | Management reporting and variance analysis |
-| [Shopify Sales & Customer Funnel](Shopify%20Sales%20%26%20Customer%20Funnel%20Dashboard%20project/) | Sales, customer repeat behavior, product mix, payments and geography | Customer and commercial analytics |
-| [AdventureWorks Sales](AWS%20Sales%20Project/) | Revenue, orders, customer/product performance and returns | Retail reporting and interactive analysis |
+| [Shopify Sales & Customer Funnel](Shopify%20Sales%20%26%20Customer%20Funnel%20Dashboard%20project/) | Sales, customer repeat behavior, product mix, payments and geography | Sales mix, repeat purchasing and a PBIX detail-table aggregation audit |
+| [AdventureWorks Sales](AWS%20Sales%20Project/) | Revenue, orders, customer/product performance and returns | Category concentration, return-rate review and time comparisons |
 | [Hospital Emergency Room](Hospital_Data/) | Patient volumes, waiting times, satisfaction and referrals | Operational KPI reporting |
 | [Uber Trip Detail](Uber_Trip_Detail/) | Bookings, booking value, distance, time and location | Time-based operations analysis |
 | [Pizza Sales SQL + Power BI](Pizza_Sales_Dashboard_Sql_Powerbi/) | Revenue, orders, quantity, product mix and day/time patterns | End-to-end SQL-to-dashboard workflow |
 | [HR Attrition](Hr_Analysis_Dashboar/) | Attrition, age, salary, tenure and job role | People analytics |
 | [Call Centre Trends](call_centre%20anyalsis/) | Answered/resolved calls, satisfaction and agent metrics | Service operations reporting |
 
-## Typical analytics workflow
+## Analytics workflow
 
-1. Understand the business question and define the grain of the data.
-2. Inspect source files and profile missing values, duplicates, data types and key uniqueness.
+1. Define the business question and data grain.
+2. Profile missing values, duplicates, data types and key uniqueness.
 3. Prepare data in Power Query and document transformations.
-4. Build a dimensional model with explicit relationships and a clear date table where appropriate.
-5. Define and validate DAX measures against known totals and independent calculations.
-6. Build a report with clear hierarchy, accessible contrast, meaningful labels and purposeful slicers.
-7. Explain the result, limitations and recommended next action in business language.
+4. Validate model relationships, filter direction and date-table behavior.
+5. Reconcile DAX measures against source totals or independent calculations.
+6. Check visual field summarization, units, labels, slicers and filter interactions.
+7. Explain findings and the recommended business action in plain language.
 
-## Skills represented across projects
+## Skills represented
 
 - Power Query transformations and data cleaning
 - Data modeling and relationship design
@@ -38,14 +38,13 @@ These are selected starting points for reviewing the portfolio. The project READ
 - Drill-through, bookmarks, dynamic measure selection and tooltips where implemented
 - Visual analytics, segmentation and geographic reporting
 
-## Review notes
+## Technical review notes
 
-- Project folders contain different combinations of PBIX files, PDF exports, screenshots, source data and README documentation.
-- Dashboard KPI values and measures are intentionally left unchanged in this documentation pass.
-- Each project README should connect the report to a business question, describe what the dashboard reveals, and explain how a team could use that information.
-- When presenting customer lifetime value, retention or repeat-purchase metrics, explain the metric definition and observation window so the business interpretation matches the report.
+- A dashboard screenshot can support report-visible findings; the PBIX is needed to inspect measures, relationships, field aggregation and filter behavior.
+- In the Shopify PBIX, the transaction-detail visual currently sums Order Number and ZIP Code and uses CountNonNull for Customer Id. The project README documents the correction: use identifier fields as non-summarized columns.
+- For customer lifetime value, repeat rate and purchase frequency, the measure formula and observation window must be verified before interpreting the metric as a long-term forecast.
+- Forecasts and descriptive trends support planning; they do not guarantee future results or establish causation.
 
 ## How to review a project
 
-Open the relevant folder and read its project README first. Use the PDF or screenshots to understand the report layout; use the PBIX and source data to verify calculations and filter behavior.
-
+Open the project README for its objective, findings and business recommendations. Use the PDF/screenshots for report-visible evidence and the PBIX/source data to validate DAX calculations, model relationships and filter behavior.
