@@ -1,38 +1,35 @@
 # Plant / Company Performance Dashboard — Power BI
 
-## Business Objective
-Compare current-year performance against previous-year performance using YTD/PYTD sales, quantity, and gross-profit metrics.
+## Business objective
+Compare current-year-to-date (YTD) performance with the previous-year-to-date (PYTD) view and locate sales/profitability differences by month, country, product type and account.
 
-## Reported KPIs
+## Dashboard-reported KPIs
 - **YTD Sales:** 555.66K
 - **PYTD Sales:** 538.61K
 - **YTD vs PYTD:** +17.05K
 - **Gross Profit %:** 39.62%
 
-## Analysis Areas
-- Bottom-performing countries
-- Monthly YTD vs PYTD trends
-- Quantity performance
-- Product-type analysis
-- Account profitability segmentation
+## Quantitative finding
+YTD sales are **17.05K higher** than PYTD. Relative to the displayed PYTD value, that is approximately **3.17% growth** (17.05K ÷ 538.61K). This is the overall change, not an explanation of which products or countries caused it.
 
-## Business Use
-The dashboard helps management identify performance gaps, underperforming markets, profitable segments, and year-over-year trends.
-
-## Tech Stack
-**Power BI | Power Query | DAX | YTD/PYTD Analysis | Performance Reporting**
-
-## Business Questions Addressed
-- Is current YTD performance above or below the prior-year comparison?
-- Which countries and product types are underperforming?
-- How do quantity, sales and gross-profit measures move together?
+## Analysis objective and questions
+- Is current YTD sales above or below the prior-year comparison?
+- Which months contribute most to the YTD/PYTD gap?
+- Which countries and product types are associated with weaker performance?
+- How do quantity and sales move together?
 - Which accounts fall into different profitability segments?
 
-## Key Findings to Communicate
-The dashboard reports YTD sales of 555.66K versus PYTD sales of 538.61K, a displayed difference of +17.05K, and gross-profit percentage of 39.62%. Use country, month, product and account views to locate the sources of the overall variance.
+## Findings to investigate in the report
+1. Use monthly YTD/PYTD views to identify months contributing most to the 17.05K gap.
+2. Compare country and product-type views to locate underperforming segments.
+3. Cross-check account profitability segments against gross-profit percentage before proposing account-level actions.
 
-## Business Value
-Leadership can use the variance view to focus follow-up analysis on markets, products and accounts that contribute to performance gaps or gains.
+## Business recommendation
+Management should focus its next review on the month, country, product and account slices that explain the overall +17.05K variance. Protect the positive overall trend while investigating segments that lag. Do not infer the cause of growth from the top-level KPI alone.
 
-## Report / PDF
-Review the [Performance Report PDF](Performance%20Report.pdf) and open the [interactive Power BI report](Performance%20Report.pbix).
+## Report artifacts
+- [Performance Report PDF](Performance%20Report.pdf)
+- [Interactive Power BI report](Performance%20Report.pbix)
+
+## Tools and techniques
+Power BI Desktop, Power Query, DAX, YTD/PYTD comparison, variance analysis and performance segmentation.
