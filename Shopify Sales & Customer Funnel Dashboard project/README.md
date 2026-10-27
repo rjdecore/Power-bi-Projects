@@ -24,6 +24,18 @@ Understand sales performance, product mix, payment-gateway mix, customer purchas
 
 The detail preview shows the displayed **Customer Id as 1 across multiple different customer names**. If that is the actual underlying column value rather than a visual/sample artifact, it is a data-model or source-key problem: customer counts, repeat-customer classification and purchase-frequency calculations may be unreliable. Verify Customer Id uniqueness and its relationship to the transaction table in the PBIX before presenting the customer KPIs as fully validated.
 
+## Technical audit of the PBIX detail table
+
+I inspected the PBIX report layout as well as the preview image. The transaction-detail visual currently uses these aggregations for identifier fields:
+
+- **Order No:** `Sum(shopify_sales.Order Number)`
+- **Customer Id:** `CountNonNull(shopify_sales.Customer Id)`
+- **Zip Code:** `Sum(shopify_sales.Billing Address Zip)`
+
+These are unsuitable aggregations for identifiers. They can produce misleading totals and explain why the preview shows a value of 1 in the Customer Id column for multiple customers, and a meaningless total for ZIP codes.
+
+**Power BI fix:** set Order Number, Customer Id and ZIP Code to **Don't summarize** in the table visual (or use the raw columns with the correct data category). Keep Net Sales and Total Tax as numeric aggregations where appropriate. Recheck the table's total row after changing the fields.
+
 ## Business interpretation
 The dashboard suggests a substantial repeat-customer segment and a concentration of payments through Shopify Payments. Product-type quantities show which types account for more units in this view; they do not by themselves show profit contribution.
 
