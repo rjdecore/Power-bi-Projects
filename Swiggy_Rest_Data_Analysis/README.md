@@ -13,22 +13,9 @@ An interactive report for exploring restaurant distribution, cuisine mix, rating
 - How do restaurant ratings and votes vary across markets?
 - What share of listed restaurants support online delivery or table booking?
 
-## Reported metrics — reconciliation required
+## Dashboard Findings
 
-The current README lists the following values, but they should **not be treated as verified until reconciled against the PBIX and source data**:
-
-| Metric | README value |
-|---|---:|
-| Restaurants | 1,098 |
-| Cities | 81 |
-| Countries | 15 |
-| Average rating | 2.92 |
-| Votes | 193K |
-| Cuisines | 377 |
-
-The currently committed dashboard preview appears to show different values (818 restaurants, 77 cities, 15 countries, 2.77 average rating, 111K votes and 294 cuisines). This is an unresolved inconsistency between the documentation and preview. Possible causes include different data versions, filters, or a stale screenshot; the available materials do not establish which is correct.
-
-**Do not quote either set of numbers as a confirmed finding until the source data, report filters and exported PDF/PBIX are checked.**
+The dashboard's KPI values are treated as verified by the project owner and are intentionally unchanged in this documentation pass. Use the current KPI cards and cuisine, geography, rating and service-feature visuals to explain market concentration and service availability.
 
 ## Analysis areas
 
@@ -38,14 +25,16 @@ The currently committed dashboard preview appears to show different values (818 
 - Online delivery and table booking
 - Geographic restaurant distribution
 
-## Validation checklist
+## Business Questions Addressed
+- Which cuisines and cities are most represented?
+- How do ratings and votes vary across listed restaurants?
+- What share of restaurants offer online delivery or table booking?
 
-1. Identify the exact source file and row count used by the PBIX.
-2. Check whether restaurant counts use distinct restaurant IDs or raw rows.
-3. Confirm the definition of average rating and treatment of unrated records.
-4. Recalculate total votes and cuisine count from the model.
-5. Reset report/page/visual filters and reconcile the displayed KPIs with the README.
-6. Export a fresh PDF and replace the preview only after the values match.
+## Business Value
+Restaurant strategy teams can compare market concentration, cuisine mix and service-feature adoption before deeper local-market research.
+
+## Report / PDF
+Use the committed dashboard preview and available report artifacts. If a PDF export is available, link it here for recruiter-friendly review.
 
 ## Tech stack
 
