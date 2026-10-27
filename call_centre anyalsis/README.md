@@ -36,4 +36,4 @@ The dashboard helps identify training needs, service bottlenecks, response-time 
 The dashboard reports 618 calls answered, an 81.23% resolution rate, 18.77% unresolved, 3.4/5 average satisfaction and 68.2 seconds average speed of answer. Monthly, topic and agent views help identify service pressure points. Managers can use these patterns to review training, staffing and response-time improvement.
 
 ## Report / PDF
-Review the report artifacts in this folder and link the exported PDF here if present.
+[Open the Call Centre dashboard PDF](Call%20Centre%20Trends.pdf) and [the interactive PBIX](Call%20Centre%20Trends.pbix).
