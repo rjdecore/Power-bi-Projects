@@ -44,4 +44,4 @@ The existing dashboard reports approximately:
 The dashboard reports about 4K customers, $233K sales, 3.75 average review rating, $59.76 average order value, 97.9% repeat-purchase rate and average age 44. Use the segment views to describe customer differences and inform assortment, promotions and subscriber engagement analysis.
 
 ## Report / PDF
-Use the available report visuals; a PDF export was not identified in the project listing.
+[Open the USA shopping dashboard PDF](Usa%20Sales%20dashboard.pdf) and [the interactive PBIX](Usa%20Sales%20dashboard.pbix).
