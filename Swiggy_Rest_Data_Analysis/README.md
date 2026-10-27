@@ -34,7 +34,7 @@ The dashboard's KPI values are treated as verified by the project owner and are 
 Restaurant strategy teams can compare market concentration, cuisine mix and service-feature adoption before deeper local-market research.
 
 ## Report / PDF
-Use the committed dashboard preview and available report artifacts. If a PDF export is available, link it here for recruiter-friendly review.
+Review the [Restaurant Data Analysis Dashboard PDF](Restaurant%20Data%20Analysis%20Dashboard.pdf) and open the [interactive Power BI report](Restaurant%20Data%20Analysis%20Dashboard.pbix).
 
 ## Tech stack
 
