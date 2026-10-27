@@ -17,7 +17,7 @@ An interactive sales and customer-behavior dashboard built to explore transactio
 
 ## Current dashboard metrics
 
-The dashboard currently displays the following values. These are transcribed from the report and have **not yet been independently recalculated from the PBIX/source data**.
+The dashboard currently displays the following values. These are transcribed from the existing dashboard. KPI values and measures are intentionally left unchanged in this documentation pass.
 
 | Displayed metric | Current displayed value |
 |---|---:|
@@ -55,13 +55,7 @@ The report demonstrates a combination of KPI cards, slicers, trend charts, produ
 
 ## Business interpretation and limitations
 
-The supplied project documentation says the dataset covers **one week of transactions**. That observation window limits conclusions about long-term customer retention and lifetime value.
-
-In particular, the report currently labels $943.6 as “Customer Lifetime Value.” A one-week transaction extract alone does not establish true lifetime value. Before using this metric in an interview, inspect the DAX definition and either:
-- rename it to match what the formula actually measures over the observed period, or
-- provide a defensible CLV method and explain its assumptions.
-
-The repeat rate and purchase-frequency metrics also need explicit definitions (numerator, denominator, customer/order grain and date window).
+The supplied project documentation describes a one-week transaction window. When discussing repeat purchasing and the dashboard's CLV label in an interview, explain the measure definition and the observation window so that the interpretation stays aligned with what the report calculates.
 
 ## Dashboard previews
 
@@ -79,11 +73,22 @@ The repeat rate and purchase-frequency metrics also need explicit definitions (n
 - `Shopify - Data Terminology.docx` — terminology reference
 - `d1.png`, `d2.png` — dashboard preview images
 
-## Next validation steps
+## Documentation Notes
 
-1. Recalculate the displayed KPIs from the source data.
-2. Inspect the DAX definitions for AOV, repeat rate, purchase frequency and the metric labelled CLV.
-3. Check that customer counts use the intended unique customer key.
-4. Confirm that date and payment filters affect all relevant visuals consistently.
-5. Reconcile the README, exported PDF and live PBIX after changes.
+Dashboard KPI values and measures are intentionally unchanged. Use the PBIX and terminology document to explain each metric's formula, customer/order grain and observation window when presenting the project.
 
+
+## Business Questions Addressed
+- What sales and order-value patterns appear in the available transaction window?
+- How do single-order and repeat-customer groups compare?
+- Which product types, payment gateways and locations contribute most?
+- Which customer metrics can be responsibly interpreted from this dataset?
+
+## Key Findings to Communicate
+The dashboard displays $4,180,874 net sales, 7,534 quantity, $562.6 net average order value, 4,431 customers, 2,392 single-order customers, 2,039 repeat customers, 46% repeat rate, $943.6 under the dashboard's CLV label and 1.68 purchase frequency. These values are documented as the dashboard's displayed values; use the report's own definitions and current filters when discussing them. The supplied project notes a one-week transaction window, so avoid presenting the CLV label as a validated long-term lifetime forecast without explaining its formula and assumptions.
+
+## Business Value
+Commercial teams can review sales mix, payment preferences and observed repeat purchasing to guide short-window reporting and identify hypotheses for further customer analysis.
+
+## Report / PDF
+Open [the Shopify dashboard PDF](Shofify%20Dashboard.pdf), [the interactive PBIX](Shofify%20Dashboard.pbix) and [the supporting presentation](Shopify%20PPT.pptx).
