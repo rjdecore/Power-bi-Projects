@@ -1,90 +1,89 @@
-# Shopify Sales & Customer Funnel Dashboard — Power BI
+# Shopify Sales & Customer Funnel — Power BI
 
-## Business Objective
+## Project summary
 
-This dashboard analyzes Shopify transactional data to understand sales performance, customer purchasing behavior, regional performance, product mix, and payment-channel contribution.
+An interactive sales and customer-behavior dashboard built to explore transaction value, customer purchasing patterns, product mix, payment methods and regional performance.
 
-Although the source dataset covers one week of transactions, the dashboard is designed around reusable business KPIs and interactive analysis rather than a simple collection of charts.
+**Tools:** Power BI Desktop, Power Query, DAX and interactive report features.
 
-## Executive KPIs
+## Business questions
 
-The dashboard reports:
+- What is the net sales value in the supplied dataset?
+- How are customers split between single-order and repeat-order groups?
+- Which product types and payment gateways contribute most to sales?
+- Which provinces and cities lead on the selected metric?
+- How do sales vary by date?
+- Which customer metrics can be described reliably from the available observation period?
 
-- **Net Sales:** $4.18M+
-- **Total Quantity Sold:** 7,534
-- **Average Order Value:** $562.6
-- **Total Customers:** 4,431
-- **Repeat Customers:** 2,039
-- **Repeat Customer Rate:** 46%
-- **Customer Lifetime Value:** $943.6
-- **Purchase Frequency:** 1.68
+## Current dashboard metrics
 
-## Business Questions
+The dashboard currently displays the following values. These are transcribed from the report and have **not yet been independently recalculated from the PBIX/source data**.
 
-- How much revenue is being generated?
-- What proportion of customers are repeat customers?
-- Which products and product types drive sales?
-- Which regions and cities perform best?
-- How does payment method contribute to sales?
-- What does customer purchase frequency indicate about retention?
+| Displayed metric | Current displayed value |
+|---|---:|
+| Net Sales | $4,180,874 |
+| Total Quantity | 7,534 |
+| Net Average Order Value | $562.6 |
+| Total Customers | 4,431 |
+| Single-order customers | 2,392 |
+| Repeat customers | 2,039 |
+| Repeat rate | 46% |
+| Customer Lifetime Value (dashboard label) | $943.6 |
+| Purchase frequency | 1.68 |
 
-## Dashboard Analysis
+## Analysis included
 
-### Customer Funnel
+### Sales and transaction performance
+- Net sales and quantity KPIs
+- Daily net-sales trend
+- Product-type sales comparison
+- Payment-gateway sales mix
 
-The dashboard separates single-purchase and repeat-purchase behavior and tracks:
+### Customer behavior
+- Single-order versus repeat-customer counts
+- Repeat-rate and purchase-frequency indicators
+- Customer-level transaction detail
 
-- Repeat customer rate
-- Purchase frequency
-- Customer lifetime value
-- Customer-level purchase history
-
-### Regional Performance
-
-Interactive analysis supports:
-
-- Province-level performance
-- City-level drill-through
+### Geography
+- Province and city views
 - Geographic sales distribution
-- Daily sales trends
+- Ranked city performance
 
-### Product & Payment Analysis
+## Power BI techniques shown
 
-The dashboard analyzes sales by product type and payment gateway and ranks products by revenue and quantity.
+The report demonstrates a combination of KPI cards, slicers, trend charts, product/payment breakdowns, geographic visuals and transaction-level detail. The exact implementation of each DAX measure, model relationship and interactive feature still needs validation against the PBIX before it is claimed as verified.
 
-Reported payment mix includes Shopify Payments, PayPal, Gift Cards, Amazon Pay, and manual payments.
+## Business interpretation and limitations
 
-## Power BI Features Demonstrated
+The supplied project documentation says the dataset covers **one week of transactions**. That observation window limits conclusions about long-term customer retention and lifetime value.
 
-- Power Query for data preparation
-- Data modeling and measures
-- DAX measures
-- Dynamic measures and titles
-- Drill-through pages
-- Bookmarks
-- Custom tooltips
-- Conditional formatting
-- Customer-level drill-down
-- Interactive geographic analysis
+In particular, the report currently labels $943.6 as “Customer Lifetime Value.” A one-week transaction extract alone does not establish true lifetime value. Before using this metric in an interview, inspect the DAX definition and either:
+- rename it to match what the formula actually measures over the observed period, or
+- provide a defensible CLV method and explain its assumptions.
 
-## Dashboard Preview
+The repeat rate and purchase-frequency metrics also need explicit definitions (numerator, denominator, customer/order grain and date window).
 
-![Shopify Dashboard](d1.png)
+## Dashboard previews
 
-![Shopify Dashboard Details](d2.png)
+### Executive overview
+![Shopify dashboard overview](d1.png)
 
-## Important Limitation
+### Transaction detail
+![Shopify transaction detail](d2.png)
 
-The source data represents one week of transactions. Therefore, the customer and sales metrics should be interpreted as analysis of the supplied period rather than long-term business performance.
-
-## Repository Files
+## Files
 
 - `Shofify Dashboard.pbix` — Power BI report
-- `Shofify Dashboard.pdf` — exported dashboard
+- `Shofify Dashboard.pdf` — exported report
 - `Shopify PPT.pptx` — supporting presentation
-- `Shopify - Data Terminology.docx` — metric/data definitions
-- `d1.png`, `d2.png` — dashboard previews
+- `Shopify - Data Terminology.docx` — terminology reference
+- `d1.png`, `d2.png` — dashboard preview images
 
-## Tech Stack
+## Next validation steps
 
-**Power BI Desktop | Power Query | DAX | Data Modeling | Interactive Dashboarding**
+1. Recalculate the displayed KPIs from the source data.
+2. Inspect the DAX definitions for AOV, repeat rate, purchase frequency and the metric labelled CLV.
+3. Check that customer counts use the intended unique customer key.
+4. Confirm that date and payment filters affect all relevant visuals consistently.
+5. Reconcile the README, exported PDF and live PBIX after changes.
+
