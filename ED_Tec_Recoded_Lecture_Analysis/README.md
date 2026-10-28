@@ -27,18 +27,3 @@ Insights can guide course portfolio expansion, localization, instructor partners
 
 ## Tech Stack
 **Power BI | Power Query | DAX | EdTech Analytics | Engagement Analysis**
-
-## Business Questions Addressed
-- Which course categories and skills are most represented?
-- Which categories attract the most views, and which instructors have strong ratings?
-- How do language, subtitles and duration relate to engagement?
-- Where could the course catalogue be expanded or localized?
-
-## Key Findings to Communicate
-Use category, language, skill, instructor and view visuals to identify catalogue concentration and engagement differences. Interpret these as descriptive patterns in the recorded-course dataset, not proof that one course attribute causes higher views.
-
-## Business Value
-Learning-product teams can prioritize content gaps, localization, accessibility and instructor partnerships using the observed demand and engagement patterns.
-
-## Report / PDF
-See [the exported EdTech dashboard](Edtec_Analysis.pdf), [the problem statement](Project%20Problem%20Statement.pdf) and the [interactive PBIX](Edtec%20Analysis.pbix).

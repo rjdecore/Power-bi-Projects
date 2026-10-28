@@ -1,59 +1,90 @@
-# Shopify Sales & Customer Funnel — Power BI
+# Shopify Sales & Customer Funnel Dashboard — Power BI
 
-## Business objective
-Understand sales performance, product mix, payment-gateway mix, customer purchase frequency and regional sales patterns in the supplied transaction window.
+## Business Objective
 
-## Dashboard-reported KPIs
-- **Net Sales:** $4,180,874
-- **Total Quantity:** 7,534
-- **Net Average Order Value:** $562.6
+This dashboard analyzes Shopify transactional data to understand sales performance, customer purchasing behavior, regional performance, product mix, and payment-channel contribution.
+
+Although the source dataset covers one week of transactions, the dashboard is designed around reusable business KPIs and interactive analysis rather than a simple collection of charts.
+
+## Executive KPIs
+
+The dashboard reports:
+
+- **Net Sales:** $4.18M+
+- **Total Quantity Sold:** 7,534
+- **Average Order Value:** $562.6
 - **Total Customers:** 4,431
-- **Single-order customers:** 2,392
-- **Repeat customers:** 2,039
-- **Repeat rate:** 46%
-- **Customer Lifetime Value (dashboard label):** $943.6
-- **Purchase frequency:** 1.68
+- **Repeat Customers:** 2,039
+- **Repeat Customer Rate:** 46%
+- **Customer Lifetime Value:** $943.6
+- **Purchase Frequency:** 1.68
 
-## Findings visible in the dashboard preview
-- Repeat customers are **2,039 of 4,431 customers**, or approximately **46.0%**, consistent with the displayed repeat-rate KPI. Single-order customers account for the remaining 54.0%.
-- The visible net-sales trend ranges from approximately **$0.53M to $0.68M** across the seven displayed day labels; the highest visible point is $0.68M at label 24, and the lowest is $0.53M at labels 18 and 23.
-- Payment mix is led by **Shopify Payments (52%)**, followed by PayPal (20%), gift card (19%) and Amazon Payments (7%) in the displayed overview.
-- Product-type quantity is led by **Running Shoes (~2.1K)**, followed by Tennis Shoes (~1.4K), Walking Shoes (~1.0K) and Cycling Shoes (~0.8K).
+## Business Questions
 
-## Technical audit finding from the transaction-detail preview
+- How much revenue is being generated?
+- What proportion of customers are repeat customers?
+- Which products and product types drive sales?
+- Which regions and cities perform best?
+- How does payment method contribute to sales?
+- What does customer purchase frequency indicate about retention?
 
-The detail preview shows the displayed **Customer Id as 1 across multiple different customer names**. If that is the actual underlying column value rather than a visual/sample artifact, it is a data-model or source-key problem: customer counts, repeat-customer classification and purchase-frequency calculations may be unreliable. Verify Customer Id uniqueness and its relationship to the transaction table in the PBIX before presenting the customer KPIs as fully validated.
+## Dashboard Analysis
 
-## Technical audit of the PBIX detail table
+### Customer Funnel
 
-I inspected the PBIX report layout as well as the preview image. The transaction-detail visual currently uses these aggregations for identifier fields:
+The dashboard separates single-purchase and repeat-purchase behavior and tracks:
 
-- **Order No:** `Sum(shopify_sales.Order Number)`
-- **Customer Id:** `CountNonNull(shopify_sales.Customer Id)`
-- **Zip Code:** `Sum(shopify_sales.Billing Address Zip)`
+- Repeat customer rate
+- Purchase frequency
+- Customer lifetime value
+- Customer-level purchase history
 
-These are unsuitable aggregations for identifiers. They can produce misleading totals and explain why the preview shows a value of 1 in the Customer Id column for multiple customers, and a meaningless total for ZIP codes.
+### Regional Performance
 
-**Power BI fix:** set Order Number, Customer Id and ZIP Code to **Don't summarize** in the table visual (or use the raw columns with the correct data category). Keep Net Sales and Total Tax as numeric aggregations where appropriate. Recheck the table's total row after changing the fields.
+Interactive analysis supports:
 
-## Business interpretation
-The dashboard suggests a substantial repeat-customer segment and a concentration of payments through Shopify Payments. Product-type quantities show which types account for more units in this view; they do not by themselves show profit contribution.
+- Province-level performance
+- City-level drill-through
+- Geographic sales distribution
+- Daily sales trends
 
-The supplied project notes describe a **one-week transaction window**. The $943.6 “Lifetime Value” label should not be presented as a validated long-term CLV forecast without verifying the measure formula and observation window. Likewise, purchase frequency should be explained using the actual calculation and date range.
+### Product & Payment Analysis
 
-## Business recommendations
-1. Investigate repeat-customer behavior by product type and payment method, using a longer observation period before proposing retention changes.
-2. Review daily sales dips and peaks with order count and average order value to distinguish volume from basket-size effects.
-3. Compare product-type sales with margin, returns and stock before prioritising assortment.
-4. Verify the CLV and purchase-frequency definitions in the PBIX before using them for customer-value forecasts.
+The dashboard analyzes sales by product type and payment gateway and ranks products by revenue and quantity.
 
-## Report artifacts
-- [Dashboard overview preview](d1.png)
-- [Transaction detail preview](d2.png)
-- [Interactive Power BI report](Shofify%20Dashboard.pbix)
-- [Exported dashboard PDF](Shofify%20Dashboard.pdf)
-- [Supporting presentation](Shopify%20PPT.pptx)
-- [Data terminology reference](Shopify%20-%20Data%20Terminology.docx)
+Reported payment mix includes Shopify Payments, PayPal, Gift Cards, Amazon Pay, and manual payments.
 
-## Tools
-Power BI Desktop, Power Query, DAX, KPI cards, trend analysis, payment mix, product segmentation and geographic reporting.
+## Power BI Features Demonstrated
+
+- Power Query for data preparation
+- Data modeling and measures
+- DAX measures
+- Dynamic measures and titles
+- Drill-through pages
+- Bookmarks
+- Custom tooltips
+- Conditional formatting
+- Customer-level drill-down
+- Interactive geographic analysis
+
+## Dashboard Preview
+
+![Shopify Dashboard](d1.png)
+
+![Shopify Dashboard Details](d2.png)
+
+## Important Limitation
+
+The source data represents one week of transactions. Therefore, the customer and sales metrics should be interpreted as analysis of the supplied period rather than long-term business performance.
+
+## Repository Files
+
+- `Shofify Dashboard.pbix` — Power BI report
+- `Shofify Dashboard.pdf` — exported dashboard
+- `Shopify PPT.pptx` — supporting presentation
+- `Shopify - Data Terminology.docx` — metric/data definitions
+- `d1.png`, `d2.png` — dashboard previews
+
+## Tech Stack
+
+**Power BI Desktop | Power Query | DAX | Data Modeling | Interactive Dashboarding**

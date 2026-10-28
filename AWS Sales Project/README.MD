@@ -1,43 +1,103 @@
 # Adventure Works Sales & Returns Dashboard — Power BI
 
-## Business objective
-Analyze sales performance across time, geography, products and customers, while reviewing return activity to support commercial and operational decisions.
+## Business Objective
 
-## Dashboard-reported metrics
-- **Revenue:** $24.9M
-- **Previous-year revenue KPI:** $9.36M
-- **Orders:** 25K+
-- **Customers:** 18K
-- **Products:** 293
-- **Returned units:** 1,828
-- **Return rate:** 2.17%
+This Power BI project analyzes Adventure Works sales performance across time, geography, products, customers, and returns.
 
-## Findings visible in dashboard previews
-- The executive overview attributes approximately **$23.6M (94.88%)** of the displayed revenue to Bikes. Accessories are labelled approximately **$0.9M (3.64%)**; the remaining category share is comparatively small in this view.
-- The return-detail table shows an overall **1,828 returned units** and a **2.17% return-rate KPI**.
-- The visible product return table includes **Road-650 Red, size 52** at a displayed return rate of **11.76%**; several Mountain-100 and Touring-2000 variants also appear among the higher return-rate rows. These are candidates for investigation, not proof of a product defect.
-- The visible yearly revenue chart shows approximately $6.4M in 2015, $9.3M in 2016 and $9.2M for the displayed 2017 period. The 2017 bar covers only the selected date range through June 2017, so it is not a full-year comparison.
+The dashboard is designed to help business users monitor revenue, orders, customer contribution, product performance, and return behavior.
 
-## Analysis questions
-- How does revenue move across the available 2015–2017 period?
-- Which products, categories, customers and territories contribute most revenue?
-- Which products or categories have higher return activity?
-- How do orders and customer patterns change over time?
-- Where do sales contribution and return behavior diverge?
+## Business Questions
 
-## Business recommendations
-1. Because Bikes dominate the displayed revenue mix, track category concentration and review Accessories/Clothing opportunities alongside their margins and demand.
-2. Investigate high-return-rate product variants by order volume, return reason and time period before recommending product or supplier changes.
-3. Compare full-year periods or use a matching year-to-date window when evaluating 2017 against 2015/2016.
-4. Validate the return-rate denominator and active report filters before presenting it as an operational benchmark.
+- How is revenue trending over time?
+- How does current revenue compare with the available target/previous-period view?
+- Which products and categories contribute most to sales?
+- Which customers contribute the most revenue?
+- What is the return rate and which products show higher returns?
+- Which regions contribute most to overall revenue?
 
-## Report artifacts
-- [Executive overview](p1.png)
-- [Sales analysis / product drill-through](p2.png)
-- [Returns and customer analysis](p3.png)
-- [Exported dashboard PDF](AW-Report-file_custom.pdf)
-- [Interactive Power BI report](AW-Report-file_custom.pbix)
-- [Supporting presentation](Adventure_Works_Cycles_Dashboard_Analysis.pptx)
+## Dataset
 
-## Tools and techniques
-Power BI Desktop, Power Query, DAX, data modeling, time-based analysis, KPI cards, ranking, geography and returns analysis.
+The repository contains Adventure Works data covering **2015–2017**, including:
+
+- Calendar
+- Customers
+- Products
+- Product categories and subcategories
+- Returns
+- Territories
+
+The repository also includes the Power BI report and exported dashboard pages.
+
+## Key Dashboard Metrics
+
+The existing dashboard reports approximately:
+
+- **25K+ orders**
+- **18K customers**
+- **293 products**
+- **$24.9M revenue view**
+- **1,828 returned units**
+- **2.17% return rate**
+
+The dashboard also includes product, customer, geographic, and year-over-year analysis.
+
+## Analysis Areas
+
+### Sales Performance
+
+Revenue is analyzed across the 2015–2017 period with time-based comparisons and target-oriented KPI views.
+
+### Product Performance
+
+The dashboard compares product categories and individual products to identify major contributors to sales and products associated with returns.
+
+### Customer Analysis
+
+Customer-level revenue rankings highlight high-value customers and support customer-retention analysis.
+
+### Geographic Analysis
+
+Revenue is segmented by territory/region to identify the markets contributing most to sales.
+
+### Returns
+
+Return quantity and return rate are analyzed to identify products with comparatively higher return behavior.
+
+## Power BI Capabilities Demonstrated
+
+- Power BI Desktop
+- Data preparation
+- Data modeling
+- DAX measures
+- Time-based analysis
+- KPI cards
+- Product and customer ranking
+- Geographic analysis
+- Returns analysis
+- Multi-page dashboard design
+
+## Dashboard Preview
+
+### Executive Overview
+
+<img src="p1.png" alt="Adventure Works Executive Dashboard" width="800">
+
+### Sales Analysis
+
+<img src="p2.png" alt="Adventure Works Sales Analysis" width="800">
+
+### Returns & Customer Analysis
+
+<img src="p3.png" alt="Adventure Works Returns and Customer Analysis" width="800">
+
+## Repository Files
+
+- `AW-Report-file_custom.pbix` — Power BI report
+- `AW-Report-file_custom.pdf` — exported dashboard
+- Adventure Works CSV files — source data
+- `p1.png`, `p2.png`, `p3.png` — dashboard previews
+- `Adventure_Works_Cycles_Dashboard_Analysis.pptx` — supporting presentation
+
+## Tech Stack
+
+**Power BI Desktop | Power Query | DAX | Data Modeling | Sales Analytics**
